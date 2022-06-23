@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify,make_response
 from flask_sqlalchemy  import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_restx import Api, Resource, fields
-from config import DevConfig
+from config import DevConfig,ProdConfig
 from models import User, YearsOfStudy
 from exts import db
 from flask_migrate import Migrate
@@ -14,7 +14,7 @@ from account import(user_ns)
 from grades import(grades_ns)
 
 app = Flask(__name__)
-app.config.from_object(DevConfig)
+app.config.from_object(ProdConfig)
 db.init_app(app)
 migrate = Migrate(app, db)
 JWTManager(app)
