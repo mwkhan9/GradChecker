@@ -149,7 +149,6 @@ export default function Grades() {
                     <Tabs defaultActiveKey="one-tab">
                         <Tab eventKey="one-tab" title="Year 1" id='year_1'>
 
-                            <h1>Year 1 Grades</h1>
                             <div className="card-deck wrapCards">
                                 {
 
@@ -174,7 +173,6 @@ export default function Grades() {
                             </div>
                         </Tab>
                         <Tab eventKey="two-tab" title="Year 2" id='year_2'>
-                            <h1>Year 2 Grades</h1>
                             <div className="card-deck wrapCards">
                                 {
                                 modules2.map(
@@ -198,7 +196,6 @@ export default function Grades() {
                             </div>
                         </Tab>
                         <Tab eventKey="three-tab" title="Year 3"  id='year_3'>
-                            <h1>Year 3 Grades</h1>
                             <div className="card-deck wrapCards">
                                 {
                                 modules3.map(
@@ -224,7 +221,6 @@ export default function Grades() {
                         {
                         (current_user_NumberOfYears ==4)?
                             <Tab eventKey="four-tab" title="Year 4"  id='year_4'>
-                                <h1>Year 4 Grades</h1>
                                 <div className="card-deck wrapCards">
                                     {
                                     modules4.map(
