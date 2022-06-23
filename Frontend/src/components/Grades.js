@@ -143,7 +143,7 @@ export default function Grades() {
         <div>
             <div className="fullPage">
                 
-                <h2>Welcome {current_user_forename}!</h2>
+                <h1>Welcome {current_user_forename}!</h1>
 
                 <div className="box">
                     <Tabs defaultActiveKey="one-tab">
@@ -247,15 +247,17 @@ export default function Grades() {
                         }
                         <Tab eventKey="overall-tab" title="Overall" id='overall'>
                             <h1>Calculate overall</h1>
+                            <br></br>
                             <ul style={{listStyleType:"circle"}}>
                                 <li>Year 1: {overallYear1}%</li>
                                 <li>Year 2: {overallYear2}%</li>
                                 <li>Year 3: {overallYear3}%</li>
                                 {(current_user_NumberOfYears ==4)?<li>Year 4: {overallYear4}%</li>:<></>}
                             </ul>
-
+                            <br></br>
                             <Form.Group>
                                 <h5>Please enter the ratio that each year is weighted at:</h5>
+                                <br></br>
                                 <Form.Label>Year 1</Form.Label>
                                 <Form.Control type="number" {...register("ratio1",{required: true, minLength:1, maxLength:1})} style={{width:'30%'}}/>
                                 {errors.ratio1 && <p style={{color:'red'}}><small>Enter a valid ratio number</small></p>}
