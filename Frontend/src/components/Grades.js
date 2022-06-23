@@ -246,6 +246,7 @@ export default function Grades() {
                             :<></>
                         }
                         <Tab eventKey="overall-tab" title="Overall" id='overall'>
+                            <br></br>
                             <h1><u>Calculate overall</u></h1>
                             <br></br>
                             <ul style={{listStyleType:"circle"}}>

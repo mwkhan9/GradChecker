@@ -189,7 +189,8 @@ export default function Account() {
 
       <div className="fullPage">
         <div className="box">
-          <h1>Edit Account Info</h1>
+          <br></br>
+          <h1><u>Edit Account Info</u></h1>
 
           <Form.Group>
             <Form.Label>Forename</Form.Label>

@@ -84,7 +84,7 @@ export default function AddAssignment() {
     
                 <div className="card-body">
                     <form method="POST" action="/signup">
-                        <h5 className="card-title">Add an Assignment</h5>
+                        <h5 className="card-title"><u>Add an Assignment</u></h5>
                         <Form.Group>
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" {...register("name",{required: true})}/>

@@ -84,7 +84,7 @@ export default function AddModule() {
     
                 <div className="card-body">
                     <form method="POST" action="/signup">
-                        <h5 className="card-title">Add a module</h5>
+                        <h5 className="card-title"><u>Add a module</u></h5>
                         <Form.Group>
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" {...register("name",{required: true})}/>
