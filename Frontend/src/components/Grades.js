@@ -143,7 +143,7 @@ export default function Grades() {
         <div>
             <div className="fullPage">
                 
-                <h1>Welcome {current_user_forename}!</h1>
+                <h1><b>Welcome {current_user_forename}!</b></h1>
 
                 <div className="box">
                     <Tabs defaultActiveKey="one-tab">
