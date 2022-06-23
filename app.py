@@ -13,7 +13,7 @@ from auth import(auth_ns)
 from account import(user_ns)
 from grades import(grades_ns)
 
-app = Flask(__name__)
+app=Flask(__name__,static_url_path='/',static_folder='./Frontend/build')
 app.config.from_object(ProdConfig)
 db.init_app(app)
 migrate = Migrate(app, db)
@@ -26,10 +26,13 @@ api.add_namespace(auth_ns)
 api.add_namespace(user_ns)
 api.add_namespace(grades_ns)
 
-@api.route('/hello')
-class HelloResource(Resource):
-    def get(self):
-        return {'message':'Hello World'}
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
+
+@app.errorhandler(404)
+def not_found(err):
+    return app.send_static_file('index.html')
 
 @app.shell_context_processor
 def make_shell_context():
