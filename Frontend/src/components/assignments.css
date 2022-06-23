@@ -1,0 +1,10 @@
+.fullPage {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    min-height: 100vh;
+    height: fit-content;
+  }

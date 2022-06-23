@@ -1,0 +1,56 @@
+.wrapCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .spacing {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .center {
+    text-align: center;
+  }
+  .centerAdd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-color: #de0021;
+    border-style: solid;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+  .circle:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .delete{
+    float:right;
+    top:0px;
+    right:0px;
+    width:30px;
+    height:30px;
+  }
+
+  .cross{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px){
+    .card{
+      width: 200px;
+    }
+    .wrapCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
