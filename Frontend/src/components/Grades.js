@@ -246,7 +246,7 @@ export default function Grades() {
                             :<></>
                         }
                         <Tab eventKey="overall-tab" title="Overall" id='overall'>
-                            <h1>Calculate overall</h1>
+                            <h1><u>Calculate overall</u></h1>
                             <br></br>
                             <ul style={{listStyleType:"circle"}}>
                                 <li>Year 1: {overallYear1}%</li>
@@ -256,7 +256,7 @@ export default function Grades() {
                             </ul>
                             <br></br>
                             <Form.Group>
-                                <h5>Please enter the ratio that each year is weighted at:</h5>
+                                <h5><b>Please enter the ratio that each year is weighted at:</b></h5>
                                 <br></br>
                                 <Form.Label>Year 1</Form.Label>
                                 <Form.Control type="number" {...register("ratio1",{required: true, minLength:1, maxLength:1})} style={{width:'30%'}}/>
