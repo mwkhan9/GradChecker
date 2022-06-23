@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
         <div className="d-flex justify-content-center" style={{paddingTop: '10px',height: '100vh'}} >
-        <h1><u>GradChecker</u></h1>
+        <h1><u><b>GradChecker</b></u></h1>
         </div>
 
     </div>
